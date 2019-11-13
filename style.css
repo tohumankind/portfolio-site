@@ -1,0 +1,193 @@
+html,body{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #616161;
+
+}
+
+.hero{
+  background-color: #909090;
+  margin: none;
+  padding: none;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero h1{
+  font-family: 'elgocthin';
+  font-size: 120px;
+  color: white;
+  padding: none;
+  margin: none;
+  float: left;
+}
+
+.title{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.mainline{
+  width: 100%;
+}
+
+.info-mainline{
+  width: 71%;
+}
+
+hr{
+  width: 100%;
+  height: .5px;
+  padding: 0px;
+  margin: 0px;
+  color: white;
+}
+
+.info{
+  width: 300px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight:400;
+  font-size: 15px;
+  color: white;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+}
+
+.content-container{
+  margin: none;
+  padding: none;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+.content-box{
+  margin-left: 100px;
+  padding: 30px 30px;
+  background-color: white;
+  height: 500px;
+  width: 400px;
+  border-radius: 20px;
+
+}
+.content-box h1{
+  font-family: 'elgocthin';
+  padding: none;
+  margin: none;
+  line-height: 0;
+  font-size: 62px;
+}
+.content-box h3{
+  font-family: 'Fira Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 0;
+  padding: 0;
+  margin: 0;
+
+}
+
+#resume{
+  width: 100%;
+  height: 50px;
+  background-color: #20C016;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  bottom:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 0px 0px 20px 20px;
+
+}
+
+#resume:hover{
+  background-color: #616161;
+  border: .5px solid #20C016;
+  border-top: 0;
+  color:#51C54B;
+
+
+}
+
+#resume p{
+  font-family:'Fira Sans', sans-serif;
+  font-weight:700;
+
+}
+
+
+.content-box p{
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+
+}
+
+
+.fixed-menu{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-top: 35px;
+  padding-right: 60px;
+  background-color: none;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.fixed-menu ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.fixed-menu li{
+  float: left;
+}
+
+.fixed-menu a{
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  display: block;
+  color: white;
+  opacity: 25%;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.fixed-menu a:hover{
+  opacity: 90%;
+  text-shadow: 2px 2px 30px white; ;
+}
+
+@font-face {
+    font-family: 'elgocthin';
+    src: url('font/elgoc-thin-webfont.woff2') format('woff2'),
+         url('font/elgoc-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
