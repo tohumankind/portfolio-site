@@ -78,7 +78,7 @@ hr{
   margin-left: 100px;
   padding: 30px 30px;
   background-color: white;
-  height: 500px;
+  height: 350px;
   width: 400px;
   border-radius: 20px;
 
@@ -144,10 +144,12 @@ hr{
 
 .fixed-menu{
   position: fixed;
+  z-index: 1;
   top: 0;
+  right:60px;
   width: 100%;
   margin-top: 35px;
-  padding-right: 60px;
+  /* margin-right: 100px; */
   background-color: none;
   height: 35px;
   display: flex;
