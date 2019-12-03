@@ -7,13 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,200i,400,400i,700,700i&display=swap" rel="stylesheet">
   </head>
   <body>
-            <div class="fixed-menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="info.html">Info</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                </ul>
-            </div>
+    <div id="wrapper">
 
         <div class="hero" id="birds">
 
@@ -25,13 +19,21 @@
                 <hr>
               </div>
           </div>
+          <div class="home-menu">
+              <ul>
+                  <li><a href="info.html">info</a></li>
+                  <li><a href="projects.html">projects</a></li>
+              </ul>
+          </div>
           <div class="info">
               <p>this webspace is a collection of images, video, and type curated or created by <br> Sam Taylor.</p>
           </div>
         </div>
+      </div>
 
         <script src="js/three.r92.min.js"></script>
         <script src="js/vanta.birds.min.js"></script>
+        <script src="js/script.js"></script>
         <script>
         VANTA.BIRDS({
         el: "#birds",

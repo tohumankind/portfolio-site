@@ -3,7 +3,10 @@ html,body{
   padding: 0;
   overflow: hidden;
   background-color: #616161;
-
+}
+#wrapper{
+  opacity: 0;
+  transition: opacity 3s ease;
 }
 
 .hero{
@@ -64,6 +67,20 @@ hr{
 
 }
 
+.info-light{
+  width: 300px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight:400;
+  font-size: 15px;
+  color: #235236;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+}
+
 .content-container{
   margin: none;
   padding: none;
@@ -77,12 +94,24 @@ hr{
 .content-box{
   margin-left: 100px;
   padding: 30px 30px;
-  background-color: white;
+  background-color: none;
+  border: 1px;
+  border-style: solid;
+  border-color:	#235236;
+  color:	#235236;
   height: 350px;
   width: 400px;
-  border-radius: 20px;
 
 }
+
+.content-box hr{
+  width: 100%;
+  height: .25px;
+  padding: 0px;
+  margin: 0px;
+  color: #235236;
+}
+
 .content-box h1{
   font-family: 'elgocthin';
   padding: none;
@@ -100,27 +129,31 @@ hr{
 
 }
 
+.content-box p{
+
+}
+
 #resume{
   width: 100%;
   height: 50px;
-  background-color: #20C016;
   margin: 0;
   position: absolute;
   left: 0;
   bottom:0;
+  border-width: 1px 0px 0px 0px;
+  border-style: solid;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  border-radius: 0px 0px 20px 20px;
+  color: #235236;
 
 }
 
 #resume:hover{
-  background-color: #616161;
-  border: .5px solid #20C016;
-  border-top: 0;
-  color:#51C54B;
+  background-color: #235236;
+/*  border: .5px solid white;*/
+
+  color:white;
 
 
 }
@@ -146,34 +179,42 @@ hr{
   position: fixed;
   z-index: 1;
   top: 0;
-  right:60px;
+  left:80px;
   width: 100%;
   margin-top: 35px;
   /* margin-right: 100px; */
   background-color: none;
-  height: 35px;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  flex-direction: row;
 }
 
+#fixed-item{
+
+  margin-left: 410%;
+
+}
 .fixed-menu ul{
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+
 }
 
 .fixed-menu li{
   float: left;
+  text-align: left;
 }
 
 .fixed-menu a{
   font-family: 'Fira Sans', sans-serif;
-  font-weight: 700;
-  font-size: 20px;
+  font-weight: 200;
+  font-size: 25px;
   display: block;
-  color: white;
+  color: #235236;
   opacity: 25%;
   text-align: center;
   padding: 16px;
@@ -182,7 +223,164 @@ hr{
 
 .fixed-menu a:hover{
   opacity: 90%;
+  text-shadow: 2px 2px 30px #235236;
+}
+
+#light a{
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 200;
+  font-size: 25px;
+  display: block;
+  color: white;
+  opacity: 25%;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+#light a:hover{
+  opacity: 90%;
+  text-shadow: 2px 2px 30px white;
+}
+.home-menu{
+  position: fixed;
+  left: 0px;
+  z-index: 1;
+  margin-top: 135px;
+  padding: 0px;
+  /* margin-right: 100px; */
+  background-color: none;
+
+}
+
+.home-menu ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.home-menu li{
+  float: left;
+  text-align: left;
+}
+
+.home-menu a{
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 200;
+  font-size: 35px;
+  display: block;
+  color: white;
+  opacity: 25%;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.home-menu a:hover{
+  opacity: 90%;
   text-shadow: 2px 2px 30px white; ;
+}
+
+
+.project-box{
+  display: flex;
+  align-items: center;
+  /* margin: 0 13px; */
+  padding: 30px 30px;
+  background-color: none;
+  border: 1px;
+  border-style: solid;
+  border-color:	white;
+  color:	white;
+  height: 350px;
+  width: 400px;
+  position: relative;
+	z-index: 5;
+	transition: color var(--time);
+}
+
+.project-box hr{
+  width: 100%;
+  height: .25px;
+  padding: 0px;
+  margin: 0px;
+  color: white;
+}
+
+.project-box h1{
+  font-family: 'elgocthin';
+  padding: none;
+  margin: none;
+  line-height: 0;
+  font-size: 62px;
+}
+.project-box h3{
+  font-family: 'Fira Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 0;
+  padding: 0;
+  margin: 0;
+
+}
+
+.project-container{
+  padding: 0 20px;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.HOVER {
+	--width: 100%;
+	--time: 0.7s;
+	position: relative;
+	display: inline-block;
+	/* height: 1em; */
+	/* padding: 1em; */
+
+	color: #235236;
+	overflow: hidden;
+}
+
+.HOVER span {
+	border-radius: 100%;
+	position: absolute;
+	display: block;
+	content: "";
+	z-index: 0;
+	width: 0;
+	height: 0;
+
+	transform: translate(-50%, -50%);
+	transition: width var(--time), padding-top var(--time);
+}
+
+#green{
+    background: #235236;
+}
+#blue{
+  background: #0a435c;
+}
+#orange{
+  background: #d46b0d;
+}
+.HOVER:hover span {
+	width: calc(var(--width)*2.25);
+	padding-top: calc(var(--width)* 2.25);
+}
+
+.animated {
+	--angle: 5deg;
+	animation: shake 0.3s;
 }
 
 @font-face {

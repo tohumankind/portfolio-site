@@ -7,12 +7,11 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,200i,400,400i,700,700i&display=swap" rel="stylesheet">
   </head>
   <body>
-
+      <div id="wrapper">
         <div class="fixed-menu">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="info.html">Info</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a href="index.html">to:humankind</a></li>
+                <li id="fixed-item"><a href="projects.html">projects</a></li>
             </ul>
         </div>
         <div class="content-container" id="birds">
@@ -20,7 +19,7 @@
             <div class="content-box">
                 <h3>class:</h3>
                 <h1>product designer</h1>
-                <hr>
+                <hr class="content-box">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Convallis convallis tellus id interdum velit laoreet id. Mi in nulla posuere sollicitudin aliquam ultrices. At augue eget arcu dictum varius duis at consectetur. Ut sem nulla pharetra diam sit amet. Integer malesuada nunc vel risus commodo viverra maecenas. Ullamcorper malesuada proin libero nunc consequat interdum varius. Dignissim convallis aenean et tortor at risus viverra adipiscing at.</p>
 
                 <a href="#">
@@ -29,17 +28,18 @@
                   </div>
                 </a>
             </div>
-            <div class="info">
+            <div class="info-light">
                 <p>*results + power level depend on MP (Matcha Points) which can be earned through consuming matcha lattes.</p>
             </div>
         </div>
-
+      </div>
         <script src="js/three.r92.min.js"></script>
         <script src="js/vanta.birds.min.js"></script>
+        <script src="js/script.js"></script>
         <script>
         VANTA.BIRDS({
         el: "#birds",
-        backgroundColor: 0x616161,
+        backgroundColor: 0xffffff,
         color1: 0xff0f,
         color2: 0xffffff,
         colorMode: "variance",
