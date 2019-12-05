@@ -1,10 +1,13 @@
 html,body{
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: #616161;
+
 }
 #wrapper{
+  height: 100vh;
+  width: 100%;
   opacity: 0;
   transition: opacity 3s ease;
 }
@@ -316,7 +319,7 @@ hr{
   padding: none;
   margin: none;
   line-height: 0;
-  font-size: 62px;
+  font-size: 60px;
 }
 .project-box h3{
   font-family: 'Fira Sans', sans-serif;
@@ -328,6 +331,15 @@ hr{
 
 }
 
+
+.project-box p{
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+
+}
 .project-container{
   padding: 0 20px;
   margin: 0;
@@ -349,6 +361,7 @@ hr{
 
 	color: #235236;
 	overflow: hidden;
+  text-decoration: none;
 }
 
 .HOVER span {
@@ -365,13 +378,13 @@ hr{
 }
 
 #green{
-    background: #235236;
+    background-color: #235236;
 }
 #blue{
-  background: #0a435c;
+  background-color: #0a435c;
 }
 #orange{
-  background: #d46b0d;
+  background-color: #d46b0d;
 }
 .HOVER:hover span {
 	width: calc(var(--width)*2.25);
@@ -383,6 +396,35 @@ hr{
 	animation: shake 0.3s;
 }
 
+.proj-nav{
+  width: 100%;
+  background-color: white;
+  height: 25px;
+
+}
+#proj-header{
+
+  width: 100%;
+  position: fixed;
+  top:0;
+  font-size: 60px;
+  background: #235236;
+}
+#proj-header h1{
+  font-family: 'elgocthin';
+  padding: none;
+  margin: none;
+  line-height:20%;
+  color: white;
+}
+
+.proj-content{
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 25px;
+  color: white;
+  margin-top: 400px;
+  padding: 20px 100px;
+}
 @font-face {
     font-family: 'elgocthin';
     src: url('font/elgoc-thin-webfont.woff2') format('woff2'),

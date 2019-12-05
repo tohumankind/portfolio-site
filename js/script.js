@@ -4,6 +4,19 @@ window.onload = function(){
 	document.getElementById('wrapper').style.opacity="1";
 }
 
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("proj-header").style.fontSize = "20px";
+    // document.getElementById("logo").style.fontSize = "25px";
+  } else {
+    document.getElementById("proj-header").style.fontSize = "60px";
+    // document.getElementById("logo").style.fontSize = "35px";
+  }
+}
+
 const animatedClassName = "animated";
 const ELEMENTS = document.querySelectorAll(".HOVER");
 const ELEMENTS_SPAN = [];
