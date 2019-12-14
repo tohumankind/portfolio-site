@@ -1,6 +1,6 @@
 html,body{
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   /* overflow: hidden; */
   background-color: #616161;
 
@@ -10,6 +10,8 @@ html,body{
   width: 100%;
   opacity: 0;
   transition: opacity 3s ease;
+  margin: 0px;
+  padding: 0px;
 }
 
 .hero{
@@ -85,8 +87,8 @@ hr{
 }
 
 .content-container{
-  margin: none;
-  padding: none;
+  margin: 0px;
+  padding: 0px;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -96,7 +98,7 @@ hr{
 
 .content-box{
   margin-left: 100px;
-  padding: 30px 30px;
+  padding: 30px;
   background-color: none;
   border: 1px;
   border-style: solid;
@@ -104,20 +106,20 @@ hr{
   color:	#235236;
   height: 350px;
   width: 400px;
-
+  z-index: 1;
 }
 
 .content-box hr{
   width: 100%;
   height: .25px;
-  padding: 0px;
+  padding: 0px 5px;
   margin: 0px;
   color: #235236;
 }
 
 .content-box h1{
   font-family: 'elgocthin';
-  padding: none;
+  padding: 0px 5px;
   margin: none;
   line-height: 0;
   font-size: 62px;
@@ -127,20 +129,20 @@ hr{
   text-transform: uppercase;
   font-size: 15px;
   line-height: 0;
-  padding: 0;
+  padding: 0px 5px;
   margin: 0;
 
 }
 
 .content-box p{
-
+   text-align: justify;
 }
 
 #resume{
   width: 100%;
   height: 50px;
   margin: 0;
-  position: absolute;
+  position: ;
   left: 0;
   bottom:0;
   border-width: 1px 0px 0px 0px;
@@ -409,6 +411,7 @@ hr{
   top:0;
   font-size: 60px;
   background: #235236;
+  z-index: 1;
 }
 #proj-header h1{
   font-family: 'elgocthin';
@@ -422,9 +425,30 @@ hr{
   font-family: 'Fira Sans', sans-serif;
   font-size: 25px;
   color: white;
-  margin-top: 400px;
+  /* margin-top: 400px; */
   padding: 20px 100px;
 }
+
+.bg-vid{
+  position: fixed;
+  right: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  padding: 0px;
+  margin: 0px;
+  opacity: 50%;
+
+}
+
+.bg-vid video{
+  margin: 0px;
+  padding: 0px;
+  min-width: 100%;
+  min-height: 100%;
+
+}
+
 @font-face {
     font-family: 'elgocthin';
     src: url('font/elgoc-thin-webfont.woff2') format('woff2'),
