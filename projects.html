@@ -4,17 +4,30 @@
     <meta charset="utf-8">
     <title>to:humankind</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,200i,400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="img/favi.png">
 </head>
   <body style="background-color:#616161;">
     <div id="wrapper">
-        <div class="fixed-menu" id="light">
-            <ul>
-                <li><a href="index.html">to:humankind</a></li>
-                <li id="fixed-item"><a href="info.html">info</a></li>
-            </ul>
-        </div>
+      <div class="fixed-menu">
+          <ul>
+
+              <div class="dropdown">
+                <a href="index.html"><button class="dropbtn">to:humankind</button></a>
+              </div>
+              <li style="color: white; opacity: 25%;"> > </li>
+              <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">work&nbsp;&nbsp;<i class="fa fa-caret-down"></i></button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="info.html">info</a>
+                <a href="#">play</a>
+              </div>
+            </div>
+              <li id="hotlink"></li>
+              <li></li>
+          </ul>
+      </div>
         <div class="project-container" id="birds">
             <a class="HOVER">
               <span id="blue"></span>

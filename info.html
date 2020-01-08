@@ -1,55 +1,64 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
-<head>
-  <meta charset="utf-8">
-  <title>to:humankind</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,200i,400,400i,700,700i&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="img/favi.png">
-  <style>
-
-  </style>
-</head>
-
-<body style="overflow: hidden;">
-  <div id="wrapper">
-    <div class="bg-vid">
-      <video autoplay loop muted>
-        <source src="vid/profile.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="fixed-menu">
-      <ul>
-        <li><a href="index.html">to:humankind</a></li>
-        <li id="fixed-item"><a href="projects.html">projects</a></li>
-      </ul>
-    </div>
-
-    <div class="content-container">
-      <div class="content-box">
-        <h3>class:</h3>
-        <h1>product designer</h1>
-        <hr class="content-box">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Convallis convallis tellus id interdum velit laoreet id. Mi in nulla posuere sollicitudin aliquam ultrices. At
-          augue eget arcu dictum varius duis at consectetur. Ut sem nulla pharetra diam sit amet. Integer malesuada nunc vel risus commodo viverra maecenas. Ullamcorper malesuada proin libero nunc consequat interdum varius. Dignissim convallis aenean
-          et tortor at risus viverra adipiscing at.</p>
-
-        <a href="#">
-          <div id="resume">
-            <p>Check out my resume here.</p>
-          </div>
-        </a>
+  <head>
+    <meta charset="utf-8">
+    <title>to:humankind</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="img/favi.png">
+  </head>
+  <body style="background-color:#616161;">
+      <div class="fixed-menu">
+          <ul>
+              <div class="dropdown">
+                <a href="index.html"><button class="dropbtn">to:humankind</button></a>
+              </div>
+              <li style="color: white; opacity: 25%;"> > </li>
+              <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">info&nbsp;&nbsp;<i class="fa fa-caret-down"></i></button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="projects.html">work</a>
+                <a href="#">play</a>
+              </div>
+            </div>
+          </ul>
       </div>
-      <div class="info-light">
-        <p>*results + power level depend on MP (Matcha Points) which can be earned through consuming matcha lattes.</p>
+      <div id="wrapper">
+        <div class="content-container" id="birds">
+
+            <div class="content-box">
+                <h3>class:</h3>
+                <h1>product designer</h1>
+                <hr class="content-box">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Convallis convallis tellus id interdum velit laoreet id. Mi in nulla posuere sollicitudin aliquam ultrices. At augue eget arcu dictum varius duis at consectetur. Ut sem nulla pharetra diam sit amet. Integer malesuada nunc vel risus commodo viverra maecenas. Ullamcorper malesuada proin libero nunc consequat interdum varius. Dignissim convallis aenean et tortor at risus viverra adipiscing at.</p>
+
+                <a href="#">
+                  <div id="resume" >
+                    <p>Check out my resume here.</p>
+                  </div>
+                </a>
+            </div>
+            <div class="info">
+                <p>*results + power level depend on MP (Matcha Points) which can be earned through consuming matcha lattes.</p>
+            </div>
+        </div>
       </div>
-    </div>
-  </div>
+        <script src="js/three.r92.min.js"></script>
+        <script src="js/vanta.birds.min.js"></script>
+        <script src="js/script.js"></script>
+        <script>
+        VANTA.BIRDS({
+        el: "#birds",
+        backgroundColor: 0x616161,
+        color1: 0xff0f,
+        color2: 0xffffff,
+        colorMode: "variance",
+        birdSize: 2.50,
+        separation: 80.00,
+        quantity: 1.00
+        })
+        </script>
 
-  <script src="js/script.js"></script>
-
-
-</body>
-
+  </body>
 </html>

@@ -1,6 +1,6 @@
 html,body{
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   /* overflow: hidden; */
   background-color: #616161;
 
@@ -10,8 +10,6 @@ html,body{
   width: 100%;
   opacity: 0;
   transition: opacity 3s ease;
-  margin: 0px;
-  padding: 0px;
 }
 
 .hero{
@@ -60,7 +58,7 @@ hr{
 
 .info{
   width: 300px;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight:400;
   font-size: 15px;
   color: white;
@@ -74,7 +72,7 @@ hr{
 
 .info-light{
   width: 300px;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight:400;
   font-size: 15px;
   color: #235236;
@@ -87,8 +85,8 @@ hr{
 }
 
 .content-container{
-  margin: 0px;
-  padding: 0px;
+  margin: none;
+  padding: none;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -98,51 +96,51 @@ hr{
 
 .content-box{
   margin-left: 100px;
-  padding: 30px;
+  padding: 30px 30px;
   background-color: none;
   border: 1px;
   border-style: solid;
-  border-color:	#235236;
-  color:	#235236;
+  border-color:	white;
+  color:	white;
   height: 350px;
   width: 400px;
-  z-index: 1;
+
 }
 
 .content-box hr{
   width: 100%;
   height: .25px;
-  padding: 0px 5px;
+  padding: 0px;
   margin: 0px;
-  color: #235236;
+  color: white;
 }
 
 .content-box h1{
   font-family: 'elgocthin';
-  padding: 0px 5px;
+  padding: none;
   margin: none;
   line-height: 0;
   font-size: 62px;
 }
 .content-box h3{
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   font-size: 15px;
   line-height: 0;
-  padding: 0px 5px;
+  padding: 0;
   margin: 0;
 
 }
 
 .content-box p{
-   text-align: justify;
+
 }
 
 #resume{
   width: 100%;
   height: 50px;
   margin: 0;
-  position: ;
+  position: absolute;
   left: 0;
   bottom:0;
   border-width: 1px 0px 0px 0px;
@@ -150,7 +148,7 @@ hr{
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #235236;
+  color: white;
 
 }
 
@@ -164,14 +162,14 @@ hr{
 }
 
 #resume p{
-  font-family:'Fira Sans', sans-serif;
+  font-family:'Montserrat', sans-serif;
   font-weight:700;
 
 }
 
 
 .content-box p{
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 200;
   font-size: 15px;
   margin-top: 15px;
@@ -182,16 +180,13 @@ hr{
 
 .fixed-menu{
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
-  left:80px;
+  left: 0;
   width: 100%;
-  margin-top: 35px;
-  /* margin-right: 100px; */
   background-color: none;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
+  padding-top: 20px;
+  padding-left: 10px;
 }
 
 #fixed-item{
@@ -203,7 +198,8 @@ hr{
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: center;
   margin: 0;
   padding: 0;
 
@@ -215,24 +211,19 @@ hr{
 }
 
 .fixed-menu a{
-  font-family: 'Fira Sans', sans-serif;
-  font-weight: 200;
-  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
   display: block;
-  color: #235236;
-  opacity: 25%;
+  color: white;
   text-align: center;
-  padding: 16px;
+  padding: 5px;
   text-decoration: none;
 }
 
-.fixed-menu a:hover{
-  opacity: 90%;
-  text-shadow: 2px 2px 30px #235236;
-}
 
 #light a{
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 200;
   font-size: 25px;
   display: block;
@@ -251,7 +242,7 @@ hr{
   position: fixed;
   left: 0px;
   z-index: 1;
-  margin-top: 135px;
+  margin-top: 180px;
   padding: 0px;
   /* margin-right: 100px; */
   background-color: none;
@@ -274,7 +265,7 @@ hr{
 }
 
 .home-menu a{
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 200;
   font-size: 35px;
   display: block;
@@ -287,7 +278,7 @@ hr{
 
 .home-menu a:hover{
   opacity: 90%;
-  text-shadow: 2px 2px 30px white; ;
+  text-shadow: 2px 2px 30px white;
 }
 
 
@@ -324,7 +315,7 @@ hr{
   font-size: 60px;
 }
 .project-box h3{
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   font-size: 15px;
   line-height: 0;
@@ -335,7 +326,7 @@ hr{
 
 
 .project-box p{
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 200;
   font-size: 15px;
   margin-top: 15px;
@@ -411,7 +402,6 @@ hr{
   top:0;
   font-size: 60px;
   background: #235236;
-  z-index: 1;
 }
 #proj-header h1{
   font-family: 'elgocthin';
@@ -422,32 +412,80 @@ hr{
 }
 
 .proj-content{
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 25px;
   color: white;
-  /* margin-top: 400px; */
+  margin-top: 400px;
   padding: 20px 100px;
 }
 
-.bg-vid{
-  position: fixed;
-  right: 0;
-  top: 0;
-  min-width: 100%;
-  min-height: 100%;
-  padding: 0px;
-  margin: 0px;
-  opacity: 50%;
+/* Dropdown Button */
+.dropbtn {
+  background-color: transparent;
+  text-align:  center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+  opacity: 25%;
+  padding: 16px 50px;
+  min-width: 160px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 
 }
 
-.bg-vid video{
-  margin: 0px;
-  padding: 0px;
-  min-width: 100%;
-  min-height: 100%;
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: none;
+  opacity: 90%;
+  text-shadow: 2px 2px 30px white;
+  outline: 0;
 
 }
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: none;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  opacity: 25%;
+  padding: 16px 50px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover{
+  opacity: 90%;
+  text-shadow: 2px 2px 30px white;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: none}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
 
 @font-face {
     font-family: 'elgocthin';
