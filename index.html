@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>to:humankind</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pointer.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/favi.png">
   </head>
@@ -35,6 +36,7 @@
 
         <script src="js/three.r92.min.js"></script>
         <script src="js/vanta.birds.min.js"></script>
+        <script src="js/pointer.js"></script>
         <script src="js/script.js"></script>
         <script>
         VANTA.BIRDS({
@@ -47,6 +49,12 @@
         separation: 80.00,
         quantity: 3.00
         })
+
+        init_pointer({
+      		pointerColor: "white", // Css color
+      		ringSize: 20, // Pixels
+      		ringClickSize: 10 // Pixels when clicking
+      	})
         </script>
 
   </body>

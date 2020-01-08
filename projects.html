@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>to:humankind</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pointer.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="img/favi.png">
@@ -65,6 +66,7 @@
             </a>
         </div>
         </div>
+        <script src="js/pointer.js"></script>
         <script src="js/script.js"></script>
         <script src="js/three.r92.min.js"></script>
         <script src="js/vanta.birds.min.js"></script>
@@ -78,6 +80,12 @@
         birdSize: 2.50,
         separation: 80.00,
         quantity: 1.00
+        })
+
+        init_pointer({
+          pointerColor: "white", // Css color
+          ringSize: 20, // Pixels
+          ringClickSize: 10 // Pixels when clicking
         })
         </script>
 
