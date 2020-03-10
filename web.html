@@ -30,7 +30,7 @@
           </ul>
       </div>
       <div id="wrapper">
-        <div class="content-container" id="birds">
+        <div class="content-container" >
 
             <div class="content-box">
                 <h3>WEB + BRANDING:</h3>
@@ -38,26 +38,77 @@
                 <hr class="content-box">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Convallis convallis tellus id interdum velit laoreet id. Mi in nulla posuere sollicitudin aliquam ultrices. At augue eget arcu dictum varius duis at consectetur. Ut sem nulla pharetra diam sit amet. Integer malesuada nunc vel risus commodo viverra maecenas. Ullamcorper malesuada proin libero nunc consequat interdum varius. Dignissim convallis aenean et tortor at risus viverra adipiscing at.</p>
             </div>
-            <div class="info">
-                <p>*results + power level depend on MP (Matcha Points) which can be earned through consuming matcha lattes.</p>
+
+
+            <div id="ascensorBuilding">
+              <div class="floor floor-1">
+                  <video autoplay muted loop id="videoBG">
+                      <source src="vid/vid3.mp4" type="video/mp4">
+                  </video>
+                  <div class="info">
+                      <p>*results + power level depend on MP (Matcha Points) which can be earned through consuming matcha lattes.</p>
+                  </div>
+              </div>
+              <div class="floor floor-2">
+                <video autoplay muted loop id="videoBG">
+                    <source src="vid/vid.mp4" type="video/mp4">
+                </video>
+                  <div class="info">
+                      <p>*results + power level depend on MP (Matcha Points) which can be earned through consuming matcha lattes.</p>
+                  </div>
+              </div>
+              <div class="floor floor-3">
+                  <video autoplay muted loop id="videoBG">
+                      <source src="vid/video.mp4" type="video/mp4">
+                  </video>
+                  <div class="info">
+                      <p>*results + power level depend on MP (Matcha Points) which can be earned through consuming matcha lattes.</p>
+                  </div>
+              </div>
+              <div class="floor floor-4">
+                <video autoplay muted loop id="videoBG">
+                    <source src="vid/profile.mp4" type="video/mp4">
+                </video>
+                  <div class="info">
+                      <p>*results + power level depend on MP (Matcha Points) which can be earned through consuming matcha lattes.</p>
+                  </div>
+              </div>
             </div>
+
+
         </div>
+        <nav class="nav-center">
+          <ul class="links-to-floor" id="flink">
+            <li><a>overview</a></li>
+            <li><a>identity</a></li>
+            <li><a>print details</a></li>
+            <li><a>website</a></li>
+          </ul>
+        </nav>
       </div>
-        <script src="js/three.r92.min.js"></script>
-        <script src="js/vanta.birds.min.js"></script>
+        <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+        <script src="js/jquery.ascensor.min.js"></script>
+        <script>
+          var ascensor = $('#ascensorBuilding').ascensor({direction:"x"},{loop:"true"});
+          var ascensorInstance = $('#ascensorBuilding').data('ascensor');
+
+
+          $(".links-to-floor li").click(function(event, index) {
+            ascensorInstance.scrollToFloor($(this).index());
+
+          });
+
+          $(".links-to-floor li:eq("+ ascensor.data("current-floor") +")").addClass("selected");
+
+          ascensor.on("scrollStart", function(event, floor){
+            $(".links-to-floor li").removeClass("selected");
+            $(".links-to-floor li:eq("+floor.to+")").addClass("selected");
+          });
+
+        </script>
         <script src="js/pointer.js"></script>
         <script src="js/script.js"></script>
         <script>
-        VANTA.BIRDS({
-        el: "#birds",
-        backgroundColor: 0x616161,
-        color1: 0xff0f,
-        color2: 0xffffff,
-        colorMode: "variance",
-        birdSize: 2.50,
-        separation: 80.00,
-        quantity: 1.00
-        })
 
         init_pointer({
           pointerColor: "white", // Css color
