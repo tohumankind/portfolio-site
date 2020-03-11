@@ -526,9 +526,11 @@ hr{
 
  li a:hover{
   cursor:pointer;
-  background: white;
-  color: grey;
+  background: grey;
+  color: white;
+  opacity: 80%;
 }
+
 
 .links-to-floor{
   position: absolute;
@@ -544,8 +546,9 @@ hr{
 }
 .selected a:hover{
   color: white;
-  background:#4fade3;
+  background:#235236;
 }
+
 
 #ascensorBuilding{
   margin: none;
