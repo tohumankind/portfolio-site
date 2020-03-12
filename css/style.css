@@ -101,13 +101,13 @@ hr{
   z-index: 1;
   margin-left: 100px;
   padding: 30px 30px;
-  background-color: none;
+  background-color: hsla(21, 5%, 75%, 0.53);
   border: 1px;
   border-style: solid;
   border-color:	white;
   color:	white;
-  height: 350px;
-  width: 400px;
+  height: 425px;
+  width: 450px;
 
 }
 
@@ -529,7 +529,7 @@ hr{
   opacity: 25%;
   border-radius:3px;
   margin-bottom:2px;
-  color: #eee;
+  color: Gray;
 }
 
  li a:hover{
@@ -545,6 +545,7 @@ hr{
   display: flex;
   align-items: center;
   bottom: 20px;
+  color:white;
 }
 
 .selected a{
@@ -622,7 +623,7 @@ hr{
   position: absolute;
   z-index: 9;
   width: 25vw;
-  height: 40vh;
+  height: 45vh;
 
 }
 
@@ -827,6 +828,16 @@ hr{
 
 }
 
+.note-content img{
+  height: 300px;
+  width: auto;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+
+
 #windowVid{
   padding-top: 10px;
   max-height: 200%;
@@ -835,6 +846,9 @@ hr{
 
 
 }
+
+
+
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: none}
 
