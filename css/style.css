@@ -321,6 +321,14 @@ hr{
   line-height: 0;
   font-size: 60px;
 }
+
+#tact-title{
+  font-family: 'elgocthin';
+  padding: none;
+  margin: none;
+  line-height: 0;
+  font-size: 60px;
+}
 .project-box h3{
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
@@ -556,16 +564,23 @@ hr{
 }
 
 #videoBG{
-  opacity: 75%;
+  opacity: 80%;
   position: fixed;
   right: 0;
   bottom: 0;
   padding: none;
-  margin: none;
-  min-width: 120%;
-  min-height: 120%;
+  min-width: 100%;
+  min-height: 110%;
+
 }
 
+.menu-bg{
+  height: 400px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  
+}
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: none}
 

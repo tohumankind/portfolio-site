@@ -26,7 +26,7 @@
           </ul>
       </div>
       <div id="wrapper">
-        <div class="content-container" id="birds">
+        <div class="content-container">
 
             <div class="content-box">
                 <h3>class:</h3>
@@ -43,23 +43,16 @@
             <div class="info">
                 <p>*results + power level depend on MP (Matcha Points) which can be earned through consuming matcha lattes.</p>
             </div>
+
+            <video autoplay muted loop id="videoBG">
+                <source src="vid/about.mp4" type="video/mp4">
+            </video>
         </div>
       </div>
-        <script src="js/three.r92.min.js"></script>
-        <script src="js/vanta.birds.min.js"></script>
+
         <script src="js/pointer.js"></script>
         <script src="js/script.js"></script>
         <script>
-        VANTA.BIRDS({
-        el: "#birds",
-        backgroundColor: 0x616161,
-        color1: 0xff0f,
-        color2: 0xffffff,
-        colorMode: "variance",
-        birdSize: 2.50,
-        separation: 80.00,
-        quantity: 1.00
-        })
 
         init_pointer({
           pointerColor: "white", // Css color
