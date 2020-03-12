@@ -33,23 +33,67 @@
                 <h1>product designer</h1>
                 <hr class="content-box">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Convallis convallis tellus id interdum velit laoreet id. Mi in nulla posuere sollicitudin aliquam ultrices. At augue eget arcu dictum varius duis at consectetur. Ut sem nulla pharetra diam sit amet. Integer malesuada nunc vel risus commodo viverra maecenas. Ullamcorper malesuada proin libero nunc consequat interdum varius. Dignissim convallis aenean et tortor at risus viverra adipiscing at.</p>
-
-                <a href="#">
-                  <div id="resume" >
-                    <p>Check out my resume here.</p>
+            </div>
+            <div id="ascensorBuilding">
+              <div class="floor floor-1">
+                  <div class="menu-bg">
                   </div>
-                </a>
-            </div>
-            <div class="info">
-                <p>*results + power level depend on MP (Matcha Points) which can be earned through consuming matcha lattes.</p>
+                  <video autoplay muted loop id="videoBG">
+                      <source src="vid/about.mp4" type="video/mp4">
+                  </video>
+
+                  <div class="info">
+                      <p>*results + power level depend on MP (Matcha Points) which can be earned through consuming matcha lattes.</p>
+                  </div>
+              </div>
+              <div class="floor floor-2">
+
+                  <div class="info">
+                      <p>*results + power level depend on MP (Matcha Points) which can be earned through consuming matcha lattes.</p>
+                  </div>
+              </div>
+              <div class="floor floor-3">
+
+                  <div class="info">
+                      <p>*results + power level depend on MP (Matcha Points) which can be earned through consuming matcha lattes.</p>
+                  </div>
+              </div>
             </div>
 
-            <video autoplay muted loop id="videoBG">
-                <source src="vid/about.mp4" type="video/mp4">
-            </video>
+
         </div>
+
+        <nav class="nav-center">
+          <ul class="links-to-floor" id="flink">
+            <li><a>at work</a></li>
+            <li><a>on paper</a></li>
+            <li><a>in mind</a></li>
+          </ul>
+        </nav>
       </div>
 
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/jquery.ascensor.min.js"></script>
+        <script>
+          var ascensor = $('#ascensorBuilding').ascensor({direction:"x"},{loop:"loop-x"},{wheelNavigation: true},{time: 10});
+          var ascensorInstance = $('#ascensorBuilding').data('ascensor');
+
+
+          $(".links-to-floor li").click(function(event, index) {
+            ascensorInstance.scrollToFloor($(this).index());
+
+          });
+
+          $(".links-to-floor li:eq("+ ascensor.data("current-floor") +")").addClass("selected");
+
+          ascensor.on("scrollStart", function(event, floor){
+            $(".links-to-floor li").removeClass("selected");
+            $(".links-to-floor li:eq("+floor.to+")").addClass("selected");
+          });
+
+
+
+        </script>
         <script src="js/pointer.js"></script>
         <script src="js/script.js"></script>
         <script>
