@@ -8,7 +8,7 @@ c.width = 1500;
 c.height = 768;
   a.font = "bold 200pt Arial";
   a.fillStyle = "rgb(255,255,255)";
-  a.fillText("idyll time", 50, 300);
+  a.fillText("idle.", 50, 300);
   var px = [];
   var imgData=a.getImageData(0,0,c.width,c.height);
   for(x=0; x<imgData.width; x++)
