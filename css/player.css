@@ -32,8 +32,13 @@ button {
   background: rgba(0, 0, 0, 0.9);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   opacity: 0.8;
-  cursor: pointer;
+  cursor: none;
   transition: all 0.4s ease-out;
+}
+
+button:hover{
+  opacity: 100%;
+  text-shadow: 2px 2px 30px white;
 }
 
 button.fade:hover {
