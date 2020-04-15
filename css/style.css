@@ -847,6 +847,56 @@ hr{
 
 }
 
+.idle{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    opacity: 100%;
+}
+
+.idle-bg{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  z-index: -2;
+}
+#idleVideo{
+
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: none;
+  min-width: 100%;
+  min-height: 110%;
+  z-index: -1;
+  animation: pulse 10s infinite;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+
+}
+
+@keyframes pulse {
+
+
+      0%{
+        opacity: 40%;
+      }
+
+
+      50%{
+        opacity: 100%;
+      }
+
+
+      100%{
+        opacity: 40%;
+      }
+}
 
 
 /* Change color of dropdown links on hover */

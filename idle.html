@@ -3,9 +3,40 @@
   <head>
     <meta charset="utf-8">
     <title>idle.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/player.css">
+    <script src="https://kit.fontawesome.com/2ce8e8760c.js" crossorigin="anonymous"></script>
+    <style>
+      html,body {
+            background-color: transparent;
+            }
+    </style>
   </head>
   <body>
-        <canvas id="c" width="1500" height="768"></canvas>
+        <div class="idle">
+            <canvas id="c" width="590" height="350"></canvas>
+        </div>
+
+              <video autoplay muted loop id="idleVideo">
+                  <source src="vid/idle-bg.mp4" type="video/mp4">
+              </video>
+
+        <div class="idle-bg">
+        </div>
+
+
+        <audio src="mp3/sample.mp3" loop></audio>
+
+        <button id="button">
+          <i class="fas fa-volume-up"></i>
+        </button>
+
+        <p>
+          created by Sam Taylor
+        </p>
+
   </body>
-  <script type="text/javascript" src="grass.js"></script>
+  <script  src="js/player.js"></script>
+  <script type="text/javascript" src="js/grass.js"></script>
+
 </html>
