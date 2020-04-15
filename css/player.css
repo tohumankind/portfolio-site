@@ -14,7 +14,7 @@ p {
   color: rgba(238, 238, 238, 0.3);
   font-family: sans-serif;
   font-size: 20px;
-  cursor: default;
+  cursor: none;
 }
 
 button {
