@@ -5,6 +5,7 @@
     <title>idle.</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/player.css">
+    <link rel="stylesheet" href="css/pointer.css">
     <script src="https://kit.fontawesome.com/2ce8e8760c.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="img/favi-alt.png">
     <style>
@@ -39,5 +40,13 @@
   </body>
   <script  src="js/player.js"></script>
   <script type="text/javascript" src="js/grass.js"></script>
+  <script src="js/pointer.js"></script>
+  <script>
+        init_pointer({
+          pointerColor: "white", // Css color
+          ringSize: 20, // Pixels
+          ringClickSize: 10 // Pixels when clicking
+        })
+  </script>
 
 </html>
